@@ -1,0 +1,19 @@
+{
+  "name": "connect-with-transition-group",
+  "version": "0.1.0",
+  "description": "Enable ReactTransitionGroup lifecycles on redux 'connected' components",
+  "main": "index.js",
+  "author": {
+    "name": "Sam Lau",
+    "web": "https://github.com/esayemm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esayemm/connect-with-transition-group"
+  },
+  "homepage": "https://github.com/esayemm/connect-with-transition-group",
+  "bugs": {
+    "url": "https://github.com/esayemm/connect-with-transition-group/issues"
+  },
+  "license": "ISC"
+}
