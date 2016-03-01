@@ -1,5 +1,9 @@
 ### connect-with-transition-group
 
+Note: if you want to use it with ReactTransitionGroup and connect this will
+work, however I suggest just going with this [react-motion](https://github.com/chenglou/react-motion)
+instead of trying to make ReactTransitionGroup work.
+
 react-redux/connect returns a copy of the component you pass in, so it does not
 play well with ReactTransitionGroup because that modifies the children directly,
 which is the copy that connect makes. All this does is calls the lifecycle
