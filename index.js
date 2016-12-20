@@ -23,7 +23,7 @@ function connectWithTransitionGroup(connect) {
     'componentDidLeave',
   ];
 
-  willFunctions.forEach(key => {
+  willFunctions.forEach(function(key) {
     connect.prototype[key] = function(cb) {
       if (this.refs.wrappedInstance[key]) {
         this.refs.wrappedInstance[key](cb);
@@ -33,7 +33,7 @@ function connectWithTransitionGroup(connect) {
     }
   });
 
-  didFunctions.forEach(key => {
+  didFunctions.forEach(function(key) {
     connect.prototype[key] = function() {
       if (this.refs.wrappedInstance[key]) {
         this.refs.wrappedInstance[key]();
