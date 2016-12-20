@@ -1,6 +1,6 @@
 {
   "name": "connect-with-transition-group",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Enable ReactTransitionGroup lifecycles on redux 'connected' components",
   "main": "index.js",
   "author": {
