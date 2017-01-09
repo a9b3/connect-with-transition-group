@@ -25,8 +25,8 @@ function connectWithTransitionGroup(connect) {
 
   willFunctions.forEach(function(key) {
     connect.prototype[key] = function(cb) {
-      if (this.refs.wrappedInstance[key]) {
-        this.refs.wrappedInstance[key](cb);
+      if (this.wrappedInstance[key]) {
+        this.wrappedInstance[key](cb);
       } else {
         cb();
       }
@@ -35,8 +35,8 @@ function connectWithTransitionGroup(connect) {
 
   didFunctions.forEach(function(key) {
     connect.prototype[key] = function() {
-      if (this.refs.wrappedInstance[key]) {
-        this.refs.wrappedInstance[key]();
+      if (this.wrappedInstance[key]) {
+        this.wrappedInstance[key]();
       }
     }
   });
