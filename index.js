@@ -11,13 +11,13 @@
  * @returns {*} component monkey patched with special lifecycle functions
  */
 function connectWithTransitionGroup(connect) {
-  const willFunctions = [
+  var willFunctions = [
     'componentWillAppear',
     'componentWillEnter',
     'componentWillLeave',
   ];
 
-  const didFunctions = [
+  var didFunctions = [
     'componentDidAppear',
     'componentDidEnter',
     'componentDidLeave',
